@@ -1,0 +1,74 @@
+.body
+{
+    margin: 0;
+    margin-top: 50px;
+    background-color: rgb(235, 241, 243);
+    margin-left:80px;
+    margin-right: 10px;
+}
+p{
+    margin:0;
+}
+.video-area
+{
+    display:grid;
+    grid-template-columns: 1fr  1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px; 
+}
+@media( max-width:750px)
+{
+    .video-area{
+        grid-template-columns: 1fr 1fr;
+    } 
+}
+@media( min-width:1000px)
+{
+    .video-area{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    } 
+}
+
+.thumbnail
+{
+    width:100%;
+    margin-bottom: 4px;
+    cursor: pointer;
+    position: relative;
+    /* similar to psotion fixed */
+}
+.video-info{
+    display:grid;
+    grid-template-columns: 50px 1fr;
+}
+.video-info-left,.channel-icon
+{
+    width:36px;
+    border-radius: 18px;
+    cursor: pointer;
+
+}
+.title
+{
+    font-family: arial;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.channel-name,.video-stats
+{
+    font-family: arial;
+    font-size: 10px;
+    color: rgb(100,100,100);
+    margin-top: 4px;
+}
+.time
+{
+    position: absolute;
+    right:4px;
+    bottom:14px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 2px;
+    font-size: 12px;
+}
